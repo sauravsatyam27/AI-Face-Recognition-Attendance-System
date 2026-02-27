@@ -28,9 +28,11 @@ const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
     origin: [
-      'http://localhost:3000', // CRA
-      'http://localhost:5173'  // VITE
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "https://ai-face-recognition-attendance-system.vercel.app"
     ],
+    methods: ["GET", "POST"],
     credentials: true
   }
 });
@@ -47,9 +49,9 @@ app.use(compression());
 
 app.use(cors({
   origin: [
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'http://localhost:5000'
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://ai-face-recognition-attendance-system.vercel.app"
   ],
   credentials: true
 }));
