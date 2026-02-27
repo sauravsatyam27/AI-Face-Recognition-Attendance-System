@@ -1,0 +1,19 @@
+{
+    "recognition_threshold": 0.6,
+    "processing_interval": 2,
+    "auto_email_report": false,
+    "email_recipients": [],
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "email_enabled": false,
+    "email_user": "",
+    "email_password": "",
+    "email_sender": "attendance@system.com",
+    "smtp_configured": false,
+    "working_hours_start": "12:00",
+    "working_hours_end": "18:00",
+    "late_threshold": "23:59",
+    "enable_notifications": true,
+    "backup_frequency": 24,
+    "max_storage_days": 90
+}
