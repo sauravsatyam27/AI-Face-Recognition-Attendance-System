@@ -7,8 +7,10 @@ import { useSocket } from '../contexts/SocketContext';
 
 const MOBILE_CAM_ID = "mobile-ipcam";
 
-const MOBILE_VIDEO_URL = "http://10.201.35.2:8080/video";
-const MOBILE_SNAPSHOT_URL = "http://10.201.35.2:8080/shot.jpg";
+const MOBILE_VIDEO_URL = "http://10.58.3.84:8080/video";
+const MOBILE_SNAPSHOT_URL = "http://10.58.3.84:8080/shot.jpg";
+
+//http://10.58.3.84:8080/
 
 const Camera = () => {
   const webcamRef = useRef(null);

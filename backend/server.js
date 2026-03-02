@@ -64,15 +64,9 @@ app.use(morgan('dev'));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 /* ================= DATABASE ================= */
-mongoose
-  .connect(
-    process.env.MONGODB_URI ||
-      'mongodb://localhost:27017/face-recognition'
-  )
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('✅ MongoDB connected'))
-  .catch((err) =>
-    console.error('❌ MongoDB connection error:', err)
-  );
+  .catch((err) => console.error('❌ MongoDB connection error:', err));
 
 /* ================= SOCKET CONNECTION ================= */
 io.on("connection", (socket) => {
